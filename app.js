@@ -51,3 +51,8 @@ module.exports = app;
 
 var port = process.env.PORT || 3000;
 app.listen(port);
+
+/*
+var db1 = mongoose.createConnection(<LinkToDatabase></LinkToDatabase>);
+var db2 = mongoose.createConnection(<LinkToDatabase></LinkToDatabase>);
+*/
