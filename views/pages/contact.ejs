@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+        <div  class="text-center text-muted" >
+            <h1 class="text-center text-muted" >Contact</h1>
+                <main class="text-center text-muted" >
+                    <form class="form" action="/contact/info" method="POST">
+                        <fieldset>
+                            <legend><b>Personal Information</b></legend>
+                            <div>
+                                <label for="txtFirstName"><b>First Name: </b></label>
+                                <input class="contact_input" id="txtFirstName" name="txtFirstName" size="35" type="text" required="required" tabindex="1">
+                            </div>
+                            <div>
+                                <label for="txtLastName"><b>Last Name: </b></label>
+                                <input class="contact_input" id="txtLastName" name="txtLastName" size="35" type="text" required="required" tabindex="3">
+                            </div>
+                            <div>
+                                <label for="txtPhone"><b>Phone: </b></label>
+                                <input class="contact_input" id="txtPhone" name="txtPhone" size="35" type="tel" required="required" tabindex="5" placeholder="(XXX) XXX-XXXX" 
+                                pattern='[\(]\d{3}[\)]\d{3}[\-]\d{4}' title='Phone Number (Format: (999)999-9999'>
+                            </div>
+                            <div>
+                                <label for="txtEmail"><b>Email: </b></label>
+                                <input class="contact_input" id="txtEmail" name="txtEmail" size="35" type="email" required="required" tabindex="7">
+                            </div>
+                            <div>Type any additional information below:</div>
+                            <div>
+                            <textarea class="contact_input" cols="100" rows="15" name="txtSpecialRq" tabindex="33" 
+                                    placeholder="--- Type here additional information ---"></textarea>
+                            </div>
+                        </fieldset>
+                            <div>
+                                <button type="submit" name="btnSubmit" value="Complete Registration" tabindex="36">Confirm</button>
+                                <button type="reset" name="btnReset" value="Clear Form" onclick="return confirm('Do you really want to reset?')" tabindex="39">Reset</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </main>
+            </div>
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+    </body>
+</html>

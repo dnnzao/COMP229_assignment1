@@ -1,0 +1,165 @@
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ul_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.li_menu {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+.li_menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li_menu a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+#allPage {
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 6px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.form {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label {
+    width: 800px;
+    float: left;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+fieldset {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 6px;
+    text-align: center;
+}
+
+input {
+    margin-right: 10px;
+    border: 1px solid;
+}
+
+h1 {
+    font-size: x-large;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+div{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 1px solid blue }
+* * * * { outline: 1px solid purple }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 2px dotted green }
+* * * * * * * { outline: 2px dotted blue }
+* * * * * * * * { outline: 2px dotted purple }
+
+/* quick reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* relevant styles */
+.img__wrap {
+    position: relative;
+    height: 5px;
+    width: 5px;
+}
+
+.img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
+  /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+}
+
+#thumbwrap {
+	position: relative;
+    visibility: hidden;
+}
+.thumb span { 
+	position: absolute;
+	visibility: hidden;
+}
+.thumb:hover, .thumb:hover span { 
+	visibility: visible;
+	top: 0;
+	left: 100px; 
+	z-index: 1;
+}
+
+.contact_input {
+    border: 1px solid;
+}
+
+.home_page_picture {
+    width: 200px;
+    height: 300px;
+}
