@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+        <div id="allPage">
+            <h1>Business Contact List</h1>
+            <div style="color:white">
+                <form action="/contact" method="GET">
+                    <button type="submit">Add New Contact</button>
+                </form>
+                <form action="/register_user" method="GET">
+                    <button type="submit">Add New User</button>
+                </form>
+                <table>
+                    <% for( var i=0; i < contactList.length-1; i++) { %>
+                            <tr>
+                                <td><%- contactList[i].first_name %></td>
+                                <td><%- contactList[i].last_name %></td>
+                                <td><%- contactList[i].phone %></td>
+                                <td><%- contactList[i].email %></td>
+                                <td>
+                                    <form action="/update" method="GET">
+                                        <input style="display: none" value="<%- contactList[i]._id %>" name="userId">
+                                        <button type="submit">Update</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form action="/delete" method="POST">
+                                        <input style="display: none" value="<%- contactList[i]._id %>" name="userId">
+                                        <button type="submit">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                    <%  } %>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+    </body>
+</html>
